@@ -32,7 +32,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="searchTermTextArea">Search Term:</label>
-                                <textarea class="form-control" id="search-term" rows="1"></textarea>
+                                <input class="form-control" id="search-term" rows="1">
                             </div>
                             <div class="form-group">
                                 <label for="recordsRetrieveNumber">Number of Records to Retrieve: </label>
@@ -44,13 +44,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="startYearTextArea">Start Year(Optional)</label>
-                                <textarea class="form-control" id="start-year" rows="1"></textarea>
+                                <input class="form-control" id="start-year" rows="1">
                             </div>
                             <div class="form-group">
                                 <label for="endYearTextArea">End Year(Optional)</label>
-                                <textarea class="form-control" id="end-year" rows="1"></textarea>
+                                <input class="form-control" id="end-year" rows="1">
                             </div>
-                            <button type="search" class="btn btn-dark" id="run-search">Search</button>
+                            <button type="submit" class="btn btn-dark" id="run-search">Search</button>
                             <button type="button" class="btn btn-dark" id="clear-all">Clear Results</button>
                         </form>
                         <br>
@@ -83,3 +83,7 @@
                 </div>
             </div>
         </div>
+        
+        <script src="assets/javascript/app.js"></script>
+    </body>
+    </html>
