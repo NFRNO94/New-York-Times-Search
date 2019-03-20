@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lANG="en-US">
+
+<head>
+    <title>New York Times Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../New York Times Search/assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="jumbotron bg-dark">
+                        <h1 class="display-4 text-light">New York Times Search</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container border border-dark">
+                        <h5 class="font-weight-bold">Search Parameters</h5>
+                        <hr class="bg-dark">
+                        <form>
+                            <div class="form-group">
+                                <label for="searchTermTextArea">Search Term:</label>
+                                <textarea class="form-control" id="search-term" rows="1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="recordsRetrieveNumber">Number of Records to Retrieve: </label>
+                                <select class="form-control" id="records-retrieve">
+                                    <option>1</option>
+                                    <option>5</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="startYearTextArea">Start Year(Optional)</label>
+                                <textarea class="form-control" id="start-year" rows="1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="endYearTextArea">End Year(Optional)</label>
+                                <textarea class="form-control" id="end-year" rows="1"></textarea>
+                            </div>
+                            <button type="search" class="btn btn-dark" id="run-search">Search</button>
+                            <button type="button" class="btn btn-dark" id="clear-all">Clear Results</button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container border border-dark">
+                        <div class="panel" style="width: 65rem;">
+                            <div class="panel-body">
+                                <h5 class="panel-title font-weight-bold">Top Articles</h5>
+                                <hr class="bg-dark">
+                                <p class="panel-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <footer class="fixed-bottom bg-dark footer">
+                            <p></p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
